@@ -1,37 +1,53 @@
-## Welcome to GitHub Pages
+## Bienvenido a Netflix-pin-hack
 
-You can use the [editor on GitHub](https://github.com/Alcatraz2033/netflix-pin-hack/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
+Este es un cript creado para poder acceder a cuentas de netflix con bloqueo de PIN.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+Este es un script de fuerza bruta que se aprovecha de la falla de Netflix, que al no tener un limite de intentos en los pines, se puede aplicar fuerza bruta. Este script se puede ejecutar tanto en Windows como en Linux. Claramente los usuarios Linux tienen una ventaja mayor, ya que al poder ejecutar el script en bash son capaces de poder obtener un margen de posibles pines correctos. 
 
-### Markdown
+Además para los usuarios linux, cuando el pin correcto acirte, ingresaran a la cuenta de netflix y como en la mayorias de las veces, se reproduce un trailer. Al salir el sonido por los parlantes el script en bash lo detecta y cierra el programa arrojando los ultimos 5 pines antes de el sonido. Por lo que el PIN correcto se encuentra en alguno de ellos.
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Inicie el programa y espere 5 segundos, durante esos 5 segundos debe colocar el cursor y hacer clik sobre la casilla del pin y los pines comenzaran a ingresarse. MUY IMPORTANTE no moverse ni hacer click en ninguna otra ventana que no sea la de Netflix
+
+### Usuario Windows:
+Ejecute el script en python index.py y este atento en que PIN la cuenta se desbloquea.
+
+### Usuario Linux:
+Ejecuten el script en bash netflix_pin.sh y vallan a tomar una taza de café :)
+
+### Instalación
+
+Primero instalaremos la libreria pyautogui
 
 ```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+pip install pyautogui
 ```
 
-For more details see [Basic writing and formatting syntax](https://docs.github.com/en/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax).
+## Manual de uso usuarios Linux
 
-### Jekyll Themes
+### Permisos
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/Alcatraz2033/netflix-pin-hack/settings/pages). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+Cambiamos los permisos de ejecución
 
-### Support or Contact
+```markdown
+chmod +600 netflix_pin.sh
 
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.
+chmod +x netflix_pin.sh
+```
+
+### Ejecución
+
+Ejecutamos el scrpt en bash agregandole el rango de numero inicial y final a iterar.
+
+```markdown
+./netflix_pin.sh 0000 9999
+```
+
+## Manual de uso usuarios Windows
+
+### Ejecución
+
+Ejecutamos el script en python agregandole el rango de numero inicial y final a iterar.
+
+```markdown
+python index.py -s 0000 -e 9999
+```
