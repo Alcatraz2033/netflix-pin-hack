@@ -34,7 +34,6 @@ while true; do
         if pgrep -f index.py >/dev/null; then   
         
             kill -9 $PID &>/dev/null 
-            clear 
             echo -e "${turquoiseColour}\nEl pin esta entre el rango de numeros:\n${endColour}"
             tail -n5 text.txt 
             echo -e "${turquoiseColour}\nProbablemnte sea el tercer numero :)${endColour}"
