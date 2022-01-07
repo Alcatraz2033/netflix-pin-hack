@@ -20,13 +20,6 @@ function Ctrl_c {
 
 trap 'Ctrl_c' INT 
 
-#sleep 8
-#for i in $(seq $1 $2);do
-#    sleep 0.75
-#    echo $i
-#done > text.txt &
-
-
 while true; do
     sound=$(pacmd list-sink-inputs  | grep -w state | grep  "RUNNING" | awk 'NF{print $NF}') 
     if [[ $sound = "RUNNING" ]];then
