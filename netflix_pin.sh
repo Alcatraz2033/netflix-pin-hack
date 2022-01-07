@@ -20,11 +20,11 @@ function Ctrl_c {
 
 trap 'Ctrl_c' INT 
 
-sleep 8
-for i in $(seq $1 $2);do
-    sleep 0.75
-    echo $i
-done > text.txt &
+#sleep 8
+#for i in $(seq $1 $2);do
+#    sleep 0.75
+#    echo $i
+#done > text.txt &
 
 
 while true; do
@@ -34,12 +34,12 @@ while true; do
         if pgrep -f index.py >/dev/null; then   
         
             kill -9 $PID &>/dev/null 
-            echo -e "${turquoiseColour}\nEl pin esta entre el rango de numeros:\n${endColour}"
-            tail -n5 text.txt 
-            echo -e "${turquoiseColour}\nProbablemnte sea el tercer numero :)${endColour}"
-            echo -e "${redColour}\n[!]Si no ve ningun numero es porque\nla tarjeta de sonido esta activa...${endColour}"
+           
+            echo -e "${turquoiseColour}\nEl pin esta entre el rango de numeros: $(expr $(cat files.txt) - 11) "-" $(expr $(cat files.txt) - 2)${endColour}" 
+            echo -e "${greenColour}\nProbablemnte sea el PIN: $(expr $(cat files.txt) - 3) :)${endColour}"
+            echo -e "${redColour}\n[!] Si no ve ningun numero es porque\nla tarjeta de sonido esta activa...${endColour}"
             kill -9 $(pgrep -f text.txt) &>/dev/null 
-            rm text.txt
+            rm files.txt
             exit 1
         
         else

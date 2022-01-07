@@ -85,7 +85,10 @@ if parse.start and parse.end:
     os.system('clear')
     for number in range(start, end, 1):
         letra = '{0:04}'.format(number)
+        f = open('files.txt', 'w+')
+        f.write(str(number))   
         print(MAGENTA + "Pin: " + CYAN + letra)
+        f.close()
         
         for i in str(letra):
             time.sleep(0.08)
