@@ -9,7 +9,7 @@ Además para los usuarios linux, cuando el pin correcto acirte, ingresaran a la 
 Inicie el programa y espere 5 segundos, durante esos 5 segundos debe colocar el cursor y hacer clik sobre la casilla del pin y los pines comenzaran a ingresarse. MUY IMPORTANTE no moverse ni hacer click en ninguna otra ventana que no sea la de Netflix
 
 <p align="center">
-	<img src="https://i.imgur.com/PWWxbmZ.gif" width="75%" height="75%" align="">
+	<img src="https://i.imgur.com/PWWxbmZ.gif" width="90%" height="90%" align="">
 </p>
 
 ### Usuario Windows:
