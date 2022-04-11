@@ -1,6 +1,5 @@
 import pyautogui, time, os, argparse, signal
 
-
 """Inicie el programa y espere 5 segundos, durante esos 5
 segundos debe colocar el cursor y hacer clik sobre la casilla
 del pin y los pines comenzaran a ingresarse """
@@ -22,8 +21,8 @@ parse = parse.parse_args()
 
 if parse.start and parse.end:
     os.system('clear')
-    banner = """
-    ██░ ██  ▄▄▄      ▄████▄   ██ ▄█▀                    
+    banner = f"""
+    {MAGENTA}██░ ██  ▄▄▄      ▄████▄   ██ ▄█▀                    
     ▓██░ ██▒▒████▄   ▒██▀ ▀█   ██▄█▒                     
     ▒██▀▀██░▒██  ▀█▄ ▒▓█    ▄ ▓███▄░                     
     ░▓█ ░██ ░██▄▄▄▄██▒▓▓▄ ▄██▒▓██ █▄                     
@@ -41,7 +40,7 @@ if parse.start and parse.end:
     ░ ░░   ░ ▒░░ ░  ░   ░     ░     ░ ░ ▒  ░ ▒ ░░░   ░▒ ░
     ░   ░ ░   ░    ░       ░ ░     ░ ░    ▒ ░ ░    ░  
             ░   ░  ░                   ░  ░ ░   ░    ░                                                      
-    CREATED BY: Alcatraz and Sergio Rivera
+    {CYAN}CREATED BY: Alcatraz and Sergio Rivera{RESET}
     """
     print(banner)
     time.sleep(3)
