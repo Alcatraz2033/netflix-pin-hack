@@ -35,9 +35,9 @@ pip install pyautogui
 Cambiamos los permisos de ejecución
 
 ```markdown
-chmod +600 netflix_pin.sh
+cd netflix-pin-hack
 
-chmod +x netflix_pin.sh
+chmod +x *
 ```
 
 ### Ejecución:
