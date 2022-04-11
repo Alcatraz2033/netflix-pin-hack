@@ -29,7 +29,7 @@ while true; do
             kill -9 $PID &>/dev/null 
            
             echo -e "${turquoiseColour}\n[*] El pin esta entre el rango de numeros: $(expr $(cat files.txt) - 13) "-" $(expr $(cat files.txt) - 3)${endColour}" 
-            echo -e "${greenColour}\n[+] Probablemnte sea el PIN: $(expr $(cat files.txt) - 12) :)${endColour}"
+            echo -e "${greenColour}\n[+] Probablemnte sea el PIN: $(expr $(cat files.txt) - 12) o $(expr $(cat files.txt) - 4) :)${endColour}"
             echo -e "${redColour}\n[!] Si no ve ningun numero es porque\nla tarjeta de sonido esta activa...${endColour}"
             kill -9 $(pgrep -f text.txt) &>/dev/null 
             rm files.txt
