@@ -24,7 +24,7 @@ Ejecute el script en python index.py y este atento en que PIN la cuenta se desbl
 Ejecuten el script en bash netflix_pin.sh y vallan a tomar una taza de café :)
 
 <p align="center">
-	<img src="https://i.imgur.com/Rp00A4l.png" width="100%" height="100%" align="">
+	<img src="https://i.imgur.com/OvOlLKz.jpg" width="100%" height="100%" align="">
 </p>
 
 ### Instalación:
