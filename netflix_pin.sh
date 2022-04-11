@@ -28,8 +28,8 @@ while true; do
         
             kill -9 $PID &>/dev/null 
            
-            echo -e "${turquoiseColour}\nEl pin esta entre el rango de numeros: $(expr $(cat files.txt) - 11) "-" $(expr $(cat files.txt) - 2)${endColour}" 
-            echo -e "${greenColour}\nProbablemnte sea el PIN: $(expr $(cat files.txt) - 3) :)${endColour}"
+            echo -e "${turquoiseColour}\n[*] El pin esta entre el rango de numeros: $(expr $(cat files.txt) - 13) "-" $(expr $(cat files.txt) - 3)${endColour}" 
+            echo -e "${greenColour}\n[+] Probablemnte sea el PIN: $(expr $(cat files.txt) - 12) :)${endColour}"
             echo -e "${redColour}\n[!] Si no ve ningun numero es porque\nla tarjeta de sonido esta activa...${endColour}"
             kill -9 $(pgrep -f text.txt) &>/dev/null 
             rm files.txt
@@ -37,7 +37,7 @@ while true; do
         
         else
 
-            echo "[!]Espere..."
+            echo "[!] Espere..."
             exit 1
         
         fi
