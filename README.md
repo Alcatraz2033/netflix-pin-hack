@@ -8,9 +8,12 @@ Además para los usuarios linux, cuando el pin correcto acirte, ingresaran a la 
 
 Inicie el programa y espere 5 segundos, durante esos 5 segundos debe colocar el cursor y hacer clik sobre la casilla del pin y los pines comenzaran a ingresarse. MUY IMPORTANTE no moverse ni hacer click en ninguna otra ventana que no sea la de Netflix
 
+## Ejecución
+
 <p align="center">
-	<img src="https://i.imgur.com/PWWxbmZ.gif" width="90%" height="90%" align="">
+	<img src="https://i.imgur.com/XtUtLAK.gif" width="90%" height="90%" align="">
 </p>
+
 
 ### Usuario Windows:
 
@@ -19,6 +22,10 @@ Ejecute el script en python index.py y este atento en que PIN la cuenta se desbl
 ### Usuario Linux:
 
 Ejecuten el script en bash netflix_pin.sh y vallan a tomar una taza de café :)
+
+<p align="center">
+	<img src="https://i.imgur.com/Rp00A4l.png" width="100%" height="100%" align="">
+</p>
 
 ### Instalación:
 
