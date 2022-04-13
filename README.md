@@ -43,9 +43,7 @@ Cambiamos los permisos de ejecución
 
 ```markdown
 git clone https://github.com/Alcatraz2033/netflix-pin-hack.git
-
 cd netflix-pin-hack
-
 chmod +x *
 ```
 
