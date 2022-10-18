@@ -1,5 +1,17 @@
 ## Bienvenido a Netflix-pin-hack
 
+<h3><p align="center">Advertencia</p></h3>
+
+Cualquier acción o actividad relacionada con netflix-pin-hack es de su exclusiva responsabilidad. El uso indebido de este conjunto de herramientas puede dar lugar a cargos penales contra las personas en cuestión. Los contribuyentes no serán responsables en caso de que se presenten cargos penales contra cualquier persona que haga un uso indebido de este conjunto de herramientas para infringir la ley.
+
+Este conjunto de herramientas contiene materiales que pueden ser potencialmente dañinos o peligrosos para las redes sociales. Consulte las leyes de su provincia/país antes de acceder, usar o de cualquier otra forma utilizar esto de manera incorrecta.
+
+Esta herramienta está hecha solo con fines educativos. No intente violar la ley con nada de lo contenido aquí. Si esta es tu intención, entonces ¡Vete de aquí!
+
+Solo demuestra "una pequeña falla de seguridad en Netflix". No debe hacer un mal uso de la información para obtener acceso no autorizado a las cuentas de otra persona. Sin embargo, puede probar esto bajo su propio riesgo.
+
+##
+
 Este es un cript creado para poder acceder a cuentas de netflix con bloqueo de PIN.
 
 Este es un script de fuerza bruta que se aprovecha de la falla de Netflix, que al no tener un limite de intentos en los pines, se puede aplicar fuerza bruta. Este script se puede ejecutar tanto en Windows como en Linux. Claramente los usuarios Linux tienen una ventaja mayor, ya que al poder ejecutar el script en bash son capaces de poder obtener un margen de posibles pines correctos.
@@ -7,6 +19,8 @@ Este es un script de fuerza bruta que se aprovecha de la falla de Netflix, que a
 Además para los usuarios linux, cuando el pin correcto acirte, ingresaran a la cuenta de netflix y como en la mayorias de las veces, se reproduce un trailer. Al salir el sonido por los parlantes el script en bash lo detecta y cierra el programa arrojando los ultimos 5 pines antes de el sonido. Por lo que el PIN correcto se encuentra en alguno de ellos.
 
 Inicie el programa y espere 5 segundos, durante esos 5 segundos debe colocar el cursor y hacer clik sobre la casilla del pin y los pines comenzaran a ingresarse. MUY IMPORTANTE no moverse ni hacer click en ninguna otra ventana que no sea la de Netflix
+
+##
 
 ## Ejecución
 
